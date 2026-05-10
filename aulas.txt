@@ -106,5 +106,33 @@ Nome da variável -> escritas com letra minúscula, mas se a palavra for compost
     -> Nome único dentro de um escopo
 
 ---------
+Declarar variáveis e métodos
 
+Variáveis:
+- Tipo NomeBemDefinido = Atribuição (opcional)
+int idade = 23;
+double altura = 1.62;
+Dog spike; // Não tem valor ainda
+
+Métodos:
+- TipoRetorno NomeObjetivoNoInfinitivo Parametros()
+int somar (int numeroUm, int numero2)
+
+    {
+    String primeiroNome = "Anita";
+        String segundoNome = "Costa";
+
+        String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+
+        System.out.println(nomeCompleto);
+
+    }
+
+    public static String nomeCompleto (String primeironome, String segundoNome) {
+        return primeironome.concat(" ").concat(segundoNome);
+        ou então:
+        return "Resultado da concat " + primeironome.concat(" ").concat(segundoNome);
+    }
+
+---------
 

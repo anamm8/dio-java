@@ -8,5 +8,21 @@ public class MinhaClasse{
         BR = "Brazil"; // Não devemos fazer isto se quisermos manter o valor de BR sempre igual, para isso usamos:
         //final String BR = "Brasil";
 
+        String meuNome = "Anita";
+        int anoFabricacao = 2026; // Tipo, nome definido e valor
+        boolean verdadeira; // sem valor
+
+        String primeiroNome = "Anita";
+        String segundoNome = "Costa";
+
+        String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+
+        System.out.println(nomeCompleto);
+
+    }
+
+    public static String nomeCompleto (String primeironome, String segundoNome) {
+        return primeironome.concat(" ").concat(segundoNome);
+        // return "Resultado da concat " + primeironome.concat(" ").concat(segundoNome);
     }
 }
