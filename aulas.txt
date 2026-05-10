@@ -211,6 +211,18 @@ Variáveis e constantes
 - São escritas em maiúsculas
 - Exemplo: final double VALOR_DE_PI = 3.14;
 
+----------------
+Operadores
+- Símbolos especiais que usamos para expressões/operações matemáticas
+- Um programa é um conjunto de instruções lógicas que, quando executadas, produzem algum Resultado
+
+Classificação de Operadores
+- Atribuição -> símbolo de igualdade = ; é usado para definir valor inicial ou sobreescrever o valor de uma variável
+
+Aritméticos
+- Usado para realizar operações matemáticas entre valores numéricos
+- + adição, - subtração, * multiplicação, / divisão
+- a + quando usada em variáveis do tipo texto, procede à concatenação de texto em vez de adição
 
 
 
