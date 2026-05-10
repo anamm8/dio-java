@@ -181,6 +181,39 @@ Java Beans
 ---------
 Tipos e variáveis
 
+Tipos de dados:
+- No java existem palavras reservadas para representar os tipos de dados básicos que precisam ser manipulados para construir programas
+- Estes tipos de dados são conhecidos como tipos primitivos (primitive types):
+    - byte (1 byte), short (2 bytes), int (4 bytes), long (8 bytes), *partes fracionárias:* float (4 bytes), double (8 bytes) - garantia de precisões, boolean, char
+    - Não são objetovs, são valores brutos
+    - Armazenados diretamente na pilha de memória (memory stack)
+
+Declaração de variáveis
+- Variável é a identificação de um espaço em memória utilizado pelo nosso programa
+- A variável é composta por: tipo de dados + identificação + valor atribuído
+- Um double é com . para decimal: double salarioMinimo = 2500.33;
+- Long: long cpf 98765432109L
+- float pi = 3.14F  -> Para perceber que é um float e não um double
+- Java é fortemente tipado!!!!
+-short numeroCurto = 1;
+    int numeroNormal = numeroCurto;
+    // short numeroCurto2 = numeroNormal; -> Não iria funcionar, pois o número normal é um int e o número curto é um short, e o Java não tem como adivinhar se o número normal vai caber dentro do número curto. Para resolver isso, precisamos fazer um cast, ou seja, dizer para o Java que temos a certeza que o número normal vai caber dentro do número curto. 
+    short numeroCurto2 = (short) numeroNormal;
+
+Variáveis e constantes
+- Variável é uma área de memória, associada a um nome, que pode armazenar valores de um determinado tipo
+- O tipo de dado define um conjunto de valores e um conjunto de operações
+- Java é uma linguagem com muita rigidez de tipos
+- Utilizamos uma referência (ponteiro) a um valor de memória, e esta pode ser redirecionada a outro valor (daí o nome "variável")
+
+- Constantes são valores armazenados em memória, que não podem ser modificados depois de serem declarados
+- São representadas pela palavra "final"
+- São escritas em maiúsculas
+- Exemplo: final double VALOR_DE_PI = 3.14;
+
+
+
+
 
 
 
