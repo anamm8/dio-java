@@ -1,0 +1,89 @@
+Features essenciais do Java
+1. Object oriented
+2. Simple
+3. Secured
+4. Platform independent
+5. Robust
+6. Portable
+7. Architecture Neutral
+8. Dynamic
+9. Interpreted
+10. High performance
+11. Multithreaded
+12. Distributes
+
+##########################################################################################################################
+1. Em java tudo é escrito em termos de Classes e Objetos
+
+Pilares da POO:
+a) Classe e Objetos
+b) Encapsulamento
+c) Abstração
+d) Herança
+e) Polimorfismo
+
+2. Era o objetivo principal na sua criação pois tem de funcionar em dispositivos com menos memória e recursos disponíveis.
+Desde microondas até aviação
+
+3. Fornece recursos de segurança; recursos de criptografia e decriptografia. Faz um check do código antes de correr, para perceber
+se este foi adulterado desde a sua criação.
+
+4. Funciona em qualquer plataforma (ambiente de hardware ou software onde é executado um programa). 
+O java é compilado para bytecode, que não está vinculado a nenhuma plataforma.
+
+5. É tão robusta que é capaz de lidar com o encerramento inesperado de um programa (tem uma coleta de lixo automática,
+há tratamento de exceção e mecanismo de verificação de tipo, usa gestão de memória forte)
+
+6. WORA - Write Once, Run Anywhere - devido ao JVM e bytecode
+
+9. A linguagem java usa tanto o compilador como interpretador; os programas são compilados para gerar arquivos bytecode
+e a JVM interpreta esse arquivo durante a execução.
+
+11. Thread é um subprocesso leve e independente de um programa em execução (ou seja, processo) que partilha recursos. Ao 
+processo de execução de vários threads em simultâneo dá-se o nome de multi-threading.
+
+O java é atualmente usado para desenvolver:
+-> Páginas web com conteúdo interativo
+-> Apps corporativas de grande porte 
+-> SW para consumidores finais
+-> Apps para smartphones
+
+JDK 1.0 - 23/01/1996
+J2SE 5.0 - 2004 trouxe controles de fluxo e outros
+JAVA SE 8 - 2014 Lambdas, foreach, consumer, interfaces, java.util.functions, Method references
+JAVA SE 11 - 2018 Escrever strings em arquivos
+
+IDE - Integrated Development Environment - SW que auxilia no desenvolvimento de código.
+Importantes para java: VSCode, Apache NetBeans IDE, Eclipse, IntelliJ IDE
+
+JDK - para desenvolver
+JRE - para os clientes poderem aceder
+
+#################################
+Sintaxe Java
+
+O que precisamos para começar? JDK instalado, IDE escolhida, Diretório do projeto definido
+
+Pacote -> Subdiretório do projeto
+
+----------
+Anatomia das Classes
+
+Sintaxe de declaração de uma nova classe: 
+public class MinhaClass {
+    // O meu código
+}
+
+!! Usar nomes intuitivos !!
+
+public class MinhaClasse{
+    // Classe executável -> Tem capacidade de inicializar o programa, tem de ter um método especial - main
+    public static void main (String [] args){
+        // Corpo da classe
+        System.out.println("Olá a todos!"); // Classe system, dá-me um output, printando
+    }
+}
+
+- Todas as classes precisam de existir dentro do diretório src do meu projeto
+- Se houver palavra composta cada letra inicial precisa ser maiúscula, ex:. MinhaClasse
+
