@@ -162,6 +162,25 @@ dar erro, pois precisamos acrescentar no inicio do ficheiro "package ..."
 
 O indicado no VSCode é criar uma pasta de cada vez. Dentro do src, criar pasta "edu", dentro dessa criar "ana", e dentro dessa "primeirasemana"
 
+---------
+Java Beans 
+- A linguagem java sugere, através de convenções, formas de escrita universal para classes, atributos, métodos e pacotes
+
+    Variáveis
+    - Deve ser clara, sem abreviações ou definição sem sentido
+    - Sempre no singular, excepto se for um array ou coleção
+    - Usar um único idioma
+    - Exemplos: salarioMedio; String email; String [] emails; String meuNome;
+
+    Métodos
+    - Devem ser nomeados como verbos
+    - camelCase
+    - Exemplos: somar(); abrirConexao(); concluirProcessamento(); findById(); 
+    - O método calcularImprimir(); é errado pois é dúbio. Ele calcula ou imprime??
+
+---------
+Tipos e variáveis
+
 
 
 
