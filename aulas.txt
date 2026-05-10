@@ -224,6 +224,54 @@ Aritméticos
 - + adição, - subtração, * multiplicação, / divisão
 - a + quando usada em variáveis do tipo texto, procede à concatenação de texto em vez de adição
 
+Unários
+- São aplicados junto com outro operador Aritméticos
+- Incrementam, decrementam, invertem valores numéricos e booleanos
+- + unário de valor positivo
+- - unário de valor negativo
+- ++ unário de incremento de valor
+- -- unário de decremento de valor
+- ! unário lógico de negação
+
+Ternário
+- Operador de condição ternária é uma forma resumida para definir uma condição e escolher entre 2 valores
+- É como um if normal mas escrito numa só linha
+- É representado pelo símbolo ?
+- <Expressão condicional> ? <Caso a condição seja true> : <Caso seja false>
+- Substitui isto:
+    int a,b
+
+    a=5;
+    b=6;
+
+    String resultado = "";
+
+    if(a==b)
+        resultado = "verdadeiro";
+    else 
+        resultado = "falso";
+    
+    System.out.println(resultado);
+- Por isto:
+    int a,b
+
+    a=5;
+    b=6;
+
+    String resultado = a==b ? "verdadeiro" : "falso";
+
+Relacionais
+- Avaliam a relação entre duas variáveis ou expressões
+- Verificam se o operando da esquerda é ==, !=, <=, >=, <, > ao da direita e retorna um resultado em forma de boolean
+
+- Com objetos utilizamos o equals em vez do ==. Compara conteúdos; só devemos usar o == com números
+
+Lógicos
+- Permitem criar expressões lógicas maiores a partir da junção de 2 ou + expressões
+- && e, || ou
+
+
+
 
 
 
