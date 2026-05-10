@@ -1,3 +1,5 @@
+package edu.ana.primeirasemana;
+
 public class MinhaClasse{
     // Classe executável -> Tem capacidade de inicializar o programa, tem de ter um método especial - main
     public static void main (String [] args){

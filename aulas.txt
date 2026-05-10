@@ -135,4 +135,34 @@ int somar (int numeroUm, int numero2)
     }
 
 ---------
+Identação
+
+- Escrita do código do programa de forma hierárquica para facilitar a visualização e entendimento do mesmo
+
+---------
+Organização de arquivos
+- Ao evoluir o sistema, surgem novos arquivos (códigos fonte) na estrutura de arquivos do projeto. É
+necessário organizar esses arquivos através de pacotes (packages)
+- Existe uma convenção para os subdiretórios do projeto
+
+Empresas: comercial (com), organizacional (org), opensource
+nome da emprea HyperTech
+com.hypertech.notification -> pacote
+com.hypertech.notification.model
+com.hypertech.notification.service ....
+
+Ana, quero organizar o meu projeto em pacotes:
+edu.ana.tema.logica
+edu.ana.tema.controlefluxo
+edu.ana.primeirasemana
+...
+
+Dentro so src, criar uma pasta "edu.ada.primeirasemana". Quando arrasto um dos meus ficheiros/classe lá para dentro, vai começar a 
+dar erro, pois precisamos acrescentar no inicio do ficheiro "package ..."
+
+O indicado no VSCode é criar uma pasta de cada vez. Dentro do src, criar pasta "edu", dentro dessa criar "ana", e dentro dessa "primeirasemana"
+
+
+
+
 
