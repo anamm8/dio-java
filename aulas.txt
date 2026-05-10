@@ -87,3 +87,24 @@ public class MinhaClasse{
 - Todas as classes precisam de existir dentro do diretório src do meu projeto
 - Se houver palavra composta cada letra inicial precisa ser maiúscula, ex:. MinhaClasse
 
+----------
+Padrão de nomenclatura
+
+Arquivo .java -> Todos os arquivos .java devem começar por letra Maiúscula. Ex: Calculadora.java, CalculadoraGrafica.java
+
+Nome da classe no arquivo -> Deve ter o mesmo nome do arquivo. Ex: Calculadora.java, public class Calculadora {}
+
+Nome da variável -> escritas com letra minúscula, mas se a palavra for composta devemos fazer: anoFabricacao (camelCase)
+    -> String BR = "Brasil";
+        BR = "Brazil"; // Não devemos fazer isto se quisermos manter o valor de BR sempre igual, para isso usamos maiúscula e usamos:
+        final String BR = "Brasil"; // Valor imutável
+
+    -> Para os nomes, usar apenas letras, _, $ ou números de 0-9
+    -> Nunca começar com número
+    -> Iniciar com letra minúscula e seguir camelCase
+    -> Não incluir espaços
+    -> Nome único dentro de um escopo
+
+---------
+
+
