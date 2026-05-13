@@ -330,7 +330,49 @@ Javadoc é um recurso gerador de documentação criado pela Sun para documentar 
 - Para gerar automaticamente, correr no terminal:
     javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs src/*.java
 
+---------------
+Terminal e Argumentos
+- Nem sempre executamos os programas por um IDE (os clientes não precisam de instalar Eclipse ou VSCode)
+- Com a JVM configurada, podemos criar um executável e disponibilizar apenas o instalador para qualquer sistema operacional
+- O projeto java criado por um IDE tem uma pasta chamada bin, onde ficam os arquivos .class (com o bytecode)
+- Procurar no file explorer essa pasta
+- No terminal:
+    - Localizar o diretório da pasta bin e cd até lá
+    - Posso correr "dir" para ver os detalhes
+    - cls para limpar
+    - depois no bin, java MinhaClasse
+    - E aparece o resultado
 
+Argumentos
+- Quando executamos uma classe que tenha um método main, este permite que passemos um array [] de argumentos do tipo String
+- Podemos, após a definição da classe a ser executada, informar esses params
+- Exemplo
+    - java MinhaClasse argumentoUm argumentoDois
+    - public static void main(String[] args){
+        String nome = args[0];
+        String sobrenome = args[1];
+    }
+
+    - Podemos ir a "Run" -> Add configuration, aparece o launch.json
+    - O arquivo agora passa a ter uma configuration "args": ["x", "y"]
+
+Scanner
+- Podemos receber dados digitados pelo user do sistema
+- A abordagem do terminal pode deixar margem para erros de execução no programa, pois precisa de estar tudo numa mesma linha
+e é necessario que os valores estejam nas posições corretas
+- Para minimizar este risco e tornar as entradas de dados mais seguras, podemos receber os dados via Scanner
+- Exemplo:
+    System.out.println("Insira o seu nome: ");
+    String nome = scanner.next();
+
+    System.out.println("Insira a sua idade: ");
+    int idade = scanner.nextInt();
+
+    System.out.println("Insira a sua altura: ");
+    double altura = scanner.nextDouble();
+
+    Não esquecer de criar o objeto scanner no início do main:
+    Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
 
 
