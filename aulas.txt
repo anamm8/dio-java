@@ -270,7 +270,65 @@ Lógicos
 - Permitem criar expressões lógicas maiores a partir da junção de 2 ou + expressões
 - && e, || ou
 
+----------------
+Métodos
+- Todas as ações das aplicações são consideradas métodos
+- Uma classe é definida por atributos e métodos:
+    - Atributos são variáveis de ='s tipos e valores
+    - Métodos correspondem a funções/ações ou sub-rotinas disponíveis dentro das classes (ex: acelerar, travar, ...)
+- Convenções para nomenclatura de métodos:
+    - Devem ser verbos
+    - Seguir padrão camelCase
+    - Ex: somar(), abrirConexao(), concluirProcessamento()
+    - Em java não existem Métodos Globais. Todos os métodos devem ser SEMPRE definidos dentro de uma classe
+- Critérios para definir métodos:
+    - Qual a finalidade do método?
+    - Qual o retorno esperado depois da execução do método? Caso não retorne nada, será usada a palavra void
+    - Quais os parâmetros necessários para a execução do método?
+    - O método tem algum risco de apresentar alguma exceção? Usar o throws Exception:
+        Ex: public double dividir(int dividendo, int divisor) throws Exception (-> Ao usar 0 como divisor por exemplo)
+    - Qual a visibilidade do método? Visível no mesmo pacote, em toda a aplicação, através de herança, ou só na própria classe
 
+----------------
+Scope
+- É o ambiente onde uma variável pode ser acedida; em java, vai de acordo com o bloco onde foi declarada
+- A variável é criada no 1º acesso à mesma e torna-se inacessível assim que o interpretador sai do bloco de execução ao qual pertence
+- Numa classe os atributos (variáveis) são declarados no corpo principal da classe e podem, portanto, ser acessíveis por todos os métodos
+- Se declararmos uma variável dentro de um método, o scope dela fica limitado ao corpo desse mesmo método
+
+-----------------
+Palavras reservadas
+- 52 palavras
+- Identificadores que possuem uma finalidade específica e não podem ser usados para nomear variáveis, classes, métodos ou atributos
+- import - importa pacotes ou classes para dentro do código
+- package - especifica a que pacote todas as classes de um arquivo pertence
+- extends determina que uma classe estende outra classe; implements determina que uma classe implemeta uma interface
+-----------------
+Java Doc 
+- Documentação de Java
+- Para ser uma dev nível avançado, é importante compreender a documentação oficial da linguagem e dos frameworks
+- Docs oracle
+- Java documentation é composto por tags que representam dados importantes sobre a proposta de uma classe e o conjunto dos seus métodos e atributos
+- Exemplo de tags: @autor, @version, @since, @param, @return, @throws
+
+- Existem 3 tipos de comentários:
+    - One line 
+        // Comentário simples de uma linha
+
+    - Multi line 
+        /* Olá
+        * comentário multi linha
+        */
+
+    - Documentação
+        /**
+        * As duas estrelas indicam um comentário de
+        * documentação
+        */
+
+Javadoc é um recurso gerador de documentação criado pela Sun para documentar a API dos programas em Java, a partir do código-fonte
+- Para gerar automaticamente, correr no terminal:
+    javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs src/*.java
 
 
 
