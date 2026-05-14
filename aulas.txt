@@ -451,3 +451,45 @@ ESTRUTURAS CONDICIONAIS
                 System.out.println("INDEFINIDO");
         }
 
+-----
+ESTRUTURAS DE REPETIÇÃO
+- Laços de repetição ou laços de iteração ou loops são comandos que permitem a iteração de um código (repetição de comandos)
+- São representados pelas seguintes estruturas:
+    - FOR
+        - Em que uma variável contadora é testada/incrementada a cada iteração
+        - Recebe o contador, a condição e o valor de incrementação
+        - for(bloco de iniciação; expressão booleana de validação; bloco de atualização)
+        
+        - FOR EM ARRAYS
+            - Usamos o controlo de fluxo FOR para interagir sobre arrays e coleções
+            - Ex:
+                String alunos[] = {"Ana", "Artur", "Bruno", "Ricardo"}
+
+                for (int x=0; x<alunos.length; x++)
+                {
+                    System.out.println("O aluno no indice x=" + x + " é " + alunos[x]);
+                }
+        - FOR EM COLEÇÕES - FOR EACH
+            - A interação é baseada nos elementos da coleção
+            - for (String aluno : alunos) {
+                System.out.println("Nome do aluno é: " + aluno);
+            }
+    
+    - BREAK/CONTINUE
+        - Break - Significa quebrar/interromper uma operação
+        - Continue - Continua o laço, só interrompe a iteração atual
+    
+    - WHILE
+        - Determina que enquanto uma condição for válida, o bloco de código é executado
+        - Testa a condição antes de executar o código
+        - Ex: while(expressão booleana de validação)
+
+    - DO WHILE
+        - Ao contrário do while, o do/while testa a condição APÓS executar o código. Será corrido pelo menos uma vez
+        - Ex: System.out.println("A ligar...");
+
+        do {
+            System.out.println("Telefone a tocar...");
+        } while(tocando());
+
+-------
