@@ -374,7 +374,80 @@ e é necessario que os valores estejam nas posições corretas
     Não esquecer de criar o objeto scanner no início do main:
     Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
+----
 
+Controlo de fluxo
+- Habilidade de ajustar a maneira como um programa realiza as suas tarefas, por meio de:
+    - Instruções especiais
+    - Chamadas de comandos
+- Essas tarefas podem ser executadas:
+    - Seletivamente, Repetidamente, Excecionalmente
 
+Os controles de fluxo podem classificar-se em:
+- ESTRUTURAS CONDICIONAIS:
+    - if-else, switch-case
+- ESTRUTURAS DE REPETIÇÃO:
+    - for, while, do-while
+- ESTRUTURAS DE EXCEÇÕES:
+    - try-catch-finally, throw
 
+----
+
+ESTRUTURAS CONDICIONAIS
+- Possibilita a escolha de um grupo de ações e comportamentos a ser executados quando determinadas condições são/não são satisfeitas
+- Pode ser simples ou composta:
+    SIMPLES
+    - Quando é feita uma validação de execução de fluxo apenas quando a condição é positiva
+    - Ex: Início -> Sacar -> Contém saldo? -> Sim (Atualiza saldo) -> Não (Fim)
+    - Quando uma condição precisa ser verdadeira para executar a ação
+    - If simples
+
+    COMPOSTA
+    - Quando o nosso programa deve seguir mais do que uma jornada de execução, condicionado a uma regra de negócio
+    - Ex: Início -> Resultado Escolar -> Nota >= 7? -> Sim (Imprime Aprovado) -> Não (Imprime Reprovado)
+    - If - else
+
+    ENCADEADA
+    - Quando temos uma 3ª. 4ª, ..., condição para além do if-else (ou seja - if - else if - else if - else)
+    - Início -> Resultado Escolar -> Nota >= 7? -> Sim (Imprime Aprovado) -> Não -> Nota >= 5 e < 7? -> Sim (Imprime Recuperação) -> Não (Imprime Reprovado) 
+
+    TERNÁRIA
+    - Podemos abreviar o nosso algoritmo com o conceito de operador Ternário
+    - Ex: String resultado = nota >= 7? "Aprovado" : "Reprovado";
+    - Ex: String resultado = nota >= 7? "Aprovado" : nota >= 5 && nota <7? "Recuperação" : "Reprovado";
+
+    SWITCH
+    - Compara o valor de cada caso com o da variável de forma sequencial e sempre que encontra um valor correspondente, executa o código associado ao caso
+    - Para evitar que continuem a ser executadas comparações após um caso correspondente ter sido encontrado, usamos o comando "break" no fim de cada bloco
+    - o break, ao ser executado, encerra a execução da estrutura onde se encontra
+    - Ex: preciso imprimir uma medida de acordo com uma sigla P(pequeno), M(médio), G(grande)
+        String sigla = "M";
+
+        if(sigla == "P")
+            System.out.println("PEQUENO");
+        else if(sigla == "M")
+            System.out.println("MEDIO");
+        if(sigla == "G")
+            System.out.println("GRANDE");
+        else
+            System.out.println("INDEFINIDO");
+
+        ---
+        com switch:
+        switch (sigla) {
+            case "P": {
+                System.out.println("PEQUENO");
+                break;
+            }
+            case "M": {
+                System.out.println("MEDIO");
+                break;
+            }
+            case "G": {
+                System.out.println("GRANDE");
+                break;
+            }
+            default:
+                System.out.println("INDEFINIDO");
+        }
 
