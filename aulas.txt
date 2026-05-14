@@ -493,3 +493,48 @@ ESTRUTURAS DE REPETIÇÃO
         } while(tocando());
 
 -------
+Estruturas excepcionais - EXCEÇÕES
+- Ao executar código em java, podem acontecer diferentes erros:
+    - Erros de codificação (pelo programador)
+    - Erros devido a entrada errada
+    - Outros imprevistos
+- Quando ocorre um erro, o java pára e gera uma mensagem de erro (lança uma exceção)
+- Um erro é algo irreparável em que a app trava/é encerrada drasticamente
+- Uma exceção é um comportamento/fluxo inesperado da app (tentar abrir um ficheiro que não existe, dividir um nº por 0, abrir conexão com
+BD com pw errada,...) -> fluxos não previstos pela aplicação
+- Um dos papéis do programador é prever certos comportamentos e fazer TRATAMENTO DE EXCEÇÕES
+    - try permite definir um código a ser testado quanto a erros durante a sua execução
+    - catch permite definir um bloco de código a ser executado caso ocorra erro no try
+    - finally permite definir código a ser executado quer haja erro no try ou não
+
+Hierarquia das exceções e exceções personalizadas
+- Java possui várias classes que representam exceções, organizadas numa hierarquia chamada:
+"checked and unchecked exceptions"
+- Hierarquia de erros
+         -->    throwable   <--
+        |                      |
+    Error                   Exception
+                        |                   |    
+                    RuntimeException        IOException/SQLException/MalformedURLException
+                        |
+            NullPointerException
+            NumberFormatException
+            ClassCastException
+            IndexOutOfBoundsException
+- Ser checked ou não checked tem a ver com a possibilidade/obrigatoriedade de corrigir ou não essas exceções
+
+Exceções customizadas
+- Podemos criar exceções baseadas em regras de negócio
+- Ex: para formatar um NIF precisamos sempre de 9 digitos, caso contrário lança uma exceção "NifInvalidoException"
+- Para criar a exceção:
+    public class NifInvalidoException extends Exception {}
+- Para usar:
+    if(nif.length() != 8)
+        throw new NifInvalidoException();
+- Dentro de um try catch
+    try{
+        String nifFormatado = formatarNif("1234567885332");
+        System.out.println("nifFormatado");
+    } catch (NifInvalidoException e) {
+        System.out.println("O nif não tem o comprimento obrigatório!");
+    }
